@@ -59,7 +59,7 @@ public class WebSocketController {
     public ReturnOut beginqiandao(@RequestParam String course) {
         ReturnOut returnOut = new ReturnOut();
         // 签到时肯定有你需要签到的课程，其他的提醒类似
-
+        //设置签到标签=1；然后进行下面的
         // 这里省去数据库，定义一个list，模拟数据库查找选这门课的学生
         List<User> list = new ArrayList<>();
         list.add(new User("1", "刘备", course, "诸葛亮"));
